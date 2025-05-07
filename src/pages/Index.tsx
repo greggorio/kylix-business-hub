@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Features from '@/components/Features';
+import Testimonials from '@/components/Testimonials';
+import Benefits from '@/components/Benefits';
+import AISection from '@/components/AISection';
+import Pricing from '@/components/Pricing';
+import FAQ from '@/components/FAQ';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import FloatingChat from '@/components/FloatingChat';
+import Newsletter from '@/components/Newsletter';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="font-nunito">
+      <Navbar />
+      <Hero />
+      <About />
+      <Features />
+      <Testimonials />
+      <Benefits />
+      <AISection />
+      <Pricing />
+      <FAQ />
+      <Contact />
+      <Footer />
+      <FloatingChat />
+      <Newsletter />
     </div>
   );
 };

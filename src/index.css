@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,34 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground font-nunito;
   }
+}
+
+.gradient-background {
+  background: linear-gradient(135deg, #eef2fb 0%, #ffffff 100%);
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply bg-kylix-primary hover:bg-kylix-primary/90 text-white px-6 py-3 rounded-full font-semibold transition-all;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-kylix-primary px-6 py-3 rounded-full font-semibold border border-kylix-primary/20 transition-all;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-kylix-primary mb-4;
+}
+
+.section-subtitle {
+  @apply text-xl text-kylix-gray mb-10 max-w-3xl mx-auto;
+}
+
+.hero-gradient {
+  background: linear-gradient(90deg, rgba(27, 37, 75, 0.05) 0%, rgba(10, 125, 181, 0.05) 100%);
 }
